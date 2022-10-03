@@ -48,6 +48,8 @@ Alternatively, create an Anaconda environment and download all of the tools with
 1. Edit the `config.sh` file in the home directory to include paths to:
     - RAW: the path to the raw data for the run.
     - OUT_DIR: the path to the desired location for the outputs of the tool. This will be re-written each time the tool is used, so be careful to backup the results of previous runs.
+    - BLASTDB: the location of the blast database to use.
+    - BLAST1line: 1 line fasta to use for building reference index in bowtie2 mapping.
     - PROFILE: the path to the file that inlcudes the sample names as they relate to the filenames. An example profile in located in the home directory.
     - [TOOLS]: any paths to tools that were not installed via Anaconda.
     - [USER_INFO]: information for the HPC scheduler.

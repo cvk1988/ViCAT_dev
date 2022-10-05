@@ -11,10 +11,16 @@ export SMPLE=`head -n +${SLURM_ARRAY_TASK_ID} $PROFILE | tail -n 1`
 
 cd ${OUT_DIR}/${SMPLE}/bowtie2/alignments/
 echo ${OUT_DIR}/${SMPLE}/blast_ref_fasta/"${SMPLE}_blasthits.fasta"
-$BAMTOOLS/bamtools split -in ${OUT_DIR}/${SMPLE}/bowtie2/alignments/"${SMPLE}_altspec_88.5_sorted.bam" -reference
+$BAMTOOLS/bamtools split -in ${OUT_DIR}/${SMPLE}/bowtie2/alignments/"${SMPLE}_vircom_nr_sorted.bam" -reference
 
-##### This code provides the stats for the read mapping 
-for f in ${OUT_DIR}/${SMPLE}/bowtie2/alignments/${SMPLE}_altspec_*_sorted.REF_NC*.bam
+#_________________________________________________________________________________|
+###                                                                               |
+###               This code provides the stats for the read mapping.              |
+###    Change the file name to match the regular expression of the BLASTdb used.  |
+###                    Also change the Suff and OUT variable.                     |
+##________________________________________________________________________________|
+ 
+for f in ${OUT_DIR}/${SMPLE}/bowtie2/alignments/${SMPLE}_vircom_nr_sorted.REF_NC*.bam
     do
     Suff=${f%%.bam}
     OUT=${Suff##*/}

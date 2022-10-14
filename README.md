@@ -15,7 +15,7 @@
 
 ## Work Flow
 
-![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/Rplot01.png)
+![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/Rplot.png)
 
 
 ### Dependencies

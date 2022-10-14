@@ -12,6 +12,12 @@
 ## Virus Community Assembly Tool
   A tool that assembles and characterizes virus communities from target enrichment high-throughput sequncing (TE-HTS)  data within and between samples. To be used on an HPC with slurm scheduler. 
 
+
+## Work Flow
+
+![alt text] (https://github.com/cvk1988/ViCAT_dev/ViCAT workflow.png?raw=true)
+
+
 ### Dependencies
 - [SPAdes](https://github.com/ablab/spades): at least version 3.14.1
 - [SeqKit](https://github.com/shenwei356/seqkit)

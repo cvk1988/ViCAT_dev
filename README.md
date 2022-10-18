@@ -15,10 +15,10 @@
 
 ## Work Flow
 
-![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/ViCAT_workflow.png)
+![plot](https://github.com/cvk1988/ViCAT_dev/figs/blob/main/ViCAT_workflow.png)
 
 ## Directory Structure
-![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/ViCAT_directory.png)
+![plot](https://github.com/cvk1988/ViCAT_dev/figs/blob/main/ViCAT_directory.png)
 
 ### Dependencies
 - [SPAdes](https://github.com/ablab/spades): at least version 3.14.1

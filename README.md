@@ -5,21 +5,24 @@
 
 <img src="https://komarev.com/ghpvc/?username=cvk1988"/> ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/cvk1988/CLCuD_pop_pipe/) 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # **ViCAT**
 
 ## Virus Community Assembly Tool
   A tool that assembles and characterizes virus communities from target enrichment high-throughput sequncing (TE-HTS)  data within and between samples. To be used on an HPC with slurm scheduler. 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Work Flow
 
 ![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/ViCAT_workflow1.png)
 
 ## Directory Structure
 ![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/ViCAT_directory.png)
----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Dependencies
 - [SPAdes](https://github.com/ablab/spades): at least version 3.14.1
 - [SeqKit](https://github.com/shenwei356/seqkit)
@@ -31,7 +34,9 @@
 - [bamtools](https://github.com/pezmaster31/bamtools)
 - R packages: ggplot2; gridExtra; plyr
 - Python (3.6 or higher) packages: Bipython; sys
----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Installation
 
 If tools are not installed on your HPC download the tools and install. Change the paths to the tools in `config.sh` to include the full path of the newly installed tools.
@@ -48,7 +53,9 @@ Alternatively, create an Anaconda environment and download all of the tools with
 `pip install [packages]`
 
 `conda install -c bioconda [tool]`
----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Quick Usage
 *OPTIONAL lines of code are identified by comment boxes in the respective scripts.*
 
@@ -75,7 +82,9 @@ Alternatively, create an Anaconda environment and download all of the tools with
 To run the tool, go to the tools directory and execute the `run.sh` file.
 
 `./run.sh`
----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Explanation of files for usage
 
 - `run.sh` contains the instructions for the workflow and builds the directory structure shown above.

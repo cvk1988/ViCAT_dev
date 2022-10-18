@@ -15,7 +15,7 @@
 
 ## Work Flow
 
-![plot](https://github.com/cvk1988/ViCAT_dev/figs/blob/main/ViCAT_workflow.png)
+![plot](https://github.com/cvk1988/ViCAT_dev/blob/main/figs/ViCAT_workflow.png)
 
 ## Directory Structure
 ![plot](https://github.com/cvk1988/ViCAT_dev/figs/blob/main/ViCAT_directory.png)

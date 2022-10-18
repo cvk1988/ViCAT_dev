@@ -60,8 +60,11 @@ Alternatively, create an Anaconda environment and download all of the tools with
     - `run_blastn.sh`: Instructions for BLAST used for taxonomic assignment. Writes BLAST files and copies to `OUT_DIR/all_blast`
     - `run_collect_contigs_accessions.sh`: Writes contig names that have BLAST hits to a file. Writes accession numbers of BLAST hits to file and then collects RefSeq fasta file for use in building bowtie2 index for read mapping. List of contigs and accessions found in `OUT_DIR/Sample(n)/blast`. RefSeq fasta file found in `OUT_DIR/Sample(n)/blast_ref_fasta`.
     - `run_gather_contigs`: Gathers contigs that have BLAST hits to deposit in `OUT_DIR/virus_contigs` folder.
+        - `gather.py`:
     - `run_cdhit`: Removes redundancy of fasta file of virus RefSeq accessions for use in building bowtie2 index. Clustering output and non-redundant fasta files are found in `OUT_DIR/Sample(n)/blast_ref_fasta`.
-    - `run_bowtie2buildnmap.sh`:
+    - `run_bowtie2buildnmap.sh`:This file makes a bowtie2 index and places it in `OUT_DIR/Sample(n)/blast_ref_fasta/bowtie2index`. The QC reads from the first step of the workflow are then used to map against this reference alignment files can be found in `OUT_DIR/Sample(n)/bowtie2/alignment`. Each sample can have a different index, as the BLAST results indicate the taxonomic assignments used for building the bowtie2 index. This code also converts the `[alignment].sam` to an `[alignment].sorted.bam`, removes the `[alignment].sam` and intermediate `[alignment].bam` files, and extracts the consensus sequences in the sample which is deposited in `OUT_DIR/Sample(n)/bowtie2/consensus`. Copies consensus fastq files to `OUT_DIR/all_consensus`.
+    - `run_split`: Splits the `[alignment].sorted.bam` into seperate files based on the RefSeq accession number. Calls the statistics on each split `[alignment].sorted.bam` and writes a hit table of total reads mapped to the respective RefSeq. Statistics and hit tables are found in `OUT_DIR/Sample(n)/bowtie2/alignment/stats`. Writes each viral taxa with reads mapped from each sample to a combined hit table of all samples in the run which is located in `OUT_DIR/relative_abundance`.
+    - `run_covgraph_for.sh`:
 
 ### Usage
 *OPTIONAL lines of code are identified by comment boxes in the respective scripts.*

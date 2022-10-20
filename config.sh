@@ -12,7 +12,7 @@ export BOWTIE="/home/u32/corykeith/tools/bowtie2-2.4.1-linux-x86_64"
 export SPADES="/home/u32/corykeith/tools/SPAdes-3.14.1-Linux/bin"
 export SEQKIT="/xdisk/uschuch/corykeith/tools/seqkit"
 export CSVTK="/xdisk/uschuch/corykeith/tools/csvtk"
-export BLASTDB="/xdisk/uschuch/corykeith/BLAST/BLdb_allsats/BLdb_CLCuD_helper_sats.fa"
+export BLASTDB="CWD/blastdb/[database]"
 export BLAST1line="/xdisk/uschuch/corykeith/BLAST/BLdb_allsats/BLdb_CLCuD_helper_sats_1line.fa"
 export BAMTOOLS="/xdisk/uschuch/corykeith/tools/bin"
 
